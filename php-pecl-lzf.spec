@@ -5,12 +5,12 @@
 Summary:	%{_modname} - (de)compression
 Summary(pl):	%{_modname} - (de)kompresja
 Name:		php-pecl-%{_modname}
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname_c}-%{version}.tgz
-# Source0-md5:	1dcdf793ac9b0a8797b84f3bccff5620
+# Source0-md5:	2e59845f0ad567ab2a7277984d247589
 URL:		http://pecl.php.net/package/LZF/
 BuildRequires:	libtool
 BuildRequires:	php-devel
