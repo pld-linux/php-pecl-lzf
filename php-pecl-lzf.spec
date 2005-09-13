@@ -12,7 +12,6 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname_c}-%{version}.tgz
 # Source0-md5:	2e59845f0ad567ab2a7277984d247589
 URL:		http://pecl.php.net/package/LZF/
-BuildRequires:	libtool
 BuildRequires:	php-devel
 Requires:	php-common
 Obsoletes:	php-pear-%{_modname}
