@@ -14,7 +14,7 @@ Source0:	http://pecl.php.net/get/%{_modname_c}-%{version}.tgz
 # Source0-md5:	2e59845f0ad567ab2a7277984d247589
 URL:		http://pecl.php.net/package/LZF/
 BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.254
+BuildRequires:	rpmbuild(macros) >= 1.322
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
