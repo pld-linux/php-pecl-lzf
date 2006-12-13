@@ -1,3 +1,5 @@
+# TODO
+# - use system liblzf
 %define		_modname	lzf
 %define		_modname_c	LZF
 %define		_status		stable
@@ -6,12 +8,12 @@
 Summary:	%{_modname} - (de)compression
 Summary(pl):	%{_modname} - (de)kompresja
 Name:		php-pecl-%{_modname}
-Version:	1.3
-Release:	5
+Version:	1.4
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname_c}-%{version}.tgz
-# Source0-md5:	2e59845f0ad567ab2a7277984d247589
+# Source0-md5:	f35d75b70bee9741946c4cb9275a74ab
 URL:		http://pecl.php.net/package/LZF/
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.322
