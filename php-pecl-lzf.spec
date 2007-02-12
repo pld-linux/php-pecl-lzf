@@ -4,7 +4,7 @@
 %define		_modname_c	LZF
 %define		_status		stable
 Summary:	%{_modname} - (de)compression
-Summary(pl.UTF-8):   %{_modname} - (de)kompresja
+Summary(pl.UTF-8):	%{_modname} - (de)kompresja
 Name:		php-pecl-%{_modname}
 Version:	1.4
 Release:	1
