@@ -4,7 +4,7 @@
 %define		_modname_c	LZF
 %define		_status		stable
 Summary:	%{_modname} - (de)compression
-Summary(pl):	%{_modname} - (de)kompresja
+Summary(pl.UTF-8):   %{_modname} - (de)kompresja
 Name:		php-pecl-%{_modname}
 Version:	1.4
 Release:	1
@@ -25,8 +25,8 @@ This package handles LZF de/compression.
 
 In PECL status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet dostarczaj obs³ugê (de)kompresji archiwów LZF.
+%description -l pl.UTF-8
+Ten pakiet dostarczaj obsÅ‚ugÄ™ (de)kompresji archiwÃ³w LZF.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
