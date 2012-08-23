@@ -7,7 +7,7 @@ Summary:	%{_modname} - (de)compression
 Summary(pl.UTF-8):	%{_modname} - (de)kompresja
 Name:		php-pecl-%{_modname}
 Version:	1.5.2
-Release:	4
+Release:	5
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -16,7 +16,7 @@ URL:		http://pecl.php.net/package/LZF/
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
+Requires:	php(core) >= 5.0.4
 Obsoletes:	php-pear-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
