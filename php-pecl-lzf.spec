@@ -2,18 +2,16 @@
 # - use system liblzf
 %define		php_name	php%{?php_suffix}
 %define		modname	lzf
-%define		modname_c	LZF
-%define		status		stable
 Summary:	%{modname} - (de)compression
 Summary(pl.UTF-8):	%{modname} - (de)kompresja
 Name:		%{php_name}-pecl-%{modname}
-Version:	1.5.2
-Release:	5
+Version:	1.6.2
+Release:	1
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	d0313d93783cd11c8e038abfcf1b4f91
-URL:		http://pecl.php.net/package/LZF/
+# Source0-md5:	390946550cfa5069397c0d7de4e9c0ae
+URL:		http://pecl.php.net/package/lzf
 BuildRequires:	%{php_name}-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
@@ -24,18 +22,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package handles LZF de/compression.
 
-In PECL status of this package is: %{status}.
-
 %description -l pl.UTF-8
 Ten pakiet dostarczaj obsługę (de)kompresji archiwów LZF.
 
-To rozszerzenie ma w PECL status: %{status}.
-
 %prep
-%setup -q -c
+%setup -qc
+mv LZF-%{version}/* .
 
 %build
-cd %{modname_c}-%{version}
 phpize
 %configure \
 	--enable-lzf
@@ -45,7 +39,7 @@ phpize
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{php_sysconfdir}/conf.d,%{php_extensiondir}}
 
-install %{modname_c}-%{version}/modules/%{modname}.so $RPM_BUILD_ROOT%{php_extensiondir}
+install -p modules/%{modname}.so $RPM_BUILD_ROOT%{php_extensiondir}
 cat <<'EOF' > $RPM_BUILD_ROOT%{php_sysconfdir}/conf.d/%{modname}.ini
 ; Enable %{modname} extension module
 extension=%{modname}.so
