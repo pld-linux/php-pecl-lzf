@@ -6,7 +6,7 @@ Summary:	%{modname} - (de)compression
 Summary(pl.UTF-8):	%{modname} - (de)kompresja
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.6.2
-Release:	2
+Release:	3
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
